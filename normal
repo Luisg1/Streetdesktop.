@@ -1,0 +1,52 @@
+conky.config = {
+
+-------------------------------------
+--  Generic Settings
+-------------------------------------
+background=true,
+update_interval=1,
+double_buffer=true,
+no_buffers=true,
+imlib_cache_size=0,
+
+draw_shades=yes,
+draw_outline=false,
+draw_borders=false,
+
+
+-------------------------------------
+--  Window Specifications
+-------------------------------------
+gap_x=0,
+gap_y=0,
+
+alignment="ml",
+
+minimum_height=400,
+minimum_width=600,
+
+own_window=true,
+own_window_type="dock",
+own_window_transparent=true,
+own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
+
+own_window_argb_visual=true,
+own_window_argb_value=0,
+
+
+-------------------------------------
+--  Text Settings
+-------------------------------------
+use_xft=true,
+xftalpha=1,
+font="Droid Sans:size=10",
+text_buffer_size=256,
+override_utf8_locale=true,
+};
+conky.text = [[
+${color f9005f}${offset 151}${voffset 85}${font Edo SZ:size=98} ${time %A}
+${color f9005f}    ${font Edo SZ:size=90}${time %B %Y}
+${color f9005f}${offset 148}${voffset 90}     ${font Edo SZ:size=50}${time %I:%M %p}
+
+
+]]
